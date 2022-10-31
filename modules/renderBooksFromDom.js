@@ -1,5 +1,5 @@
 // Getting & setting books from & inside local storage
-import BooksAtLocalStorage from "./booksAtLs.js";
+import BooksAtLocalStorage from './booksAtLs.js';
 
 class BooksInDom {
   static displayBooks() {
@@ -9,7 +9,7 @@ class BooksInDom {
 
   // Add book to the ui
   static addBook(book) {
-    const booksWrapper = document.querySelector(".books-wrapper");
+    const booksWrapper = document.querySelector('.books-wrapper');
 
     booksWrapper.innerHTML += `
       <li class="single-book" data-id=${book.id}>
@@ -24,7 +24,7 @@ class BooksInDom {
 
   // remove book from the ui
   static removeBook(element) {
-    if (element.classList.contains("del-btn")) {
+    if (element.classList.contains('del-btn')) {
       const singleBookWrapper = element.parentElement;
       singleBookWrapper.remove();
     }

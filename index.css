@@ -44,6 +44,7 @@ header nav .nav-list {
 .nav-list li {
   border-right: 1px solid #000;
   padding-right: 1rem;
+  cursor: pointer;
 }
 
 .nav-list li:last-child {
