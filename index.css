@@ -29,6 +29,10 @@ header nav .nav-list {
   gap: 1rem;
 }
 
+.nav-list li {
+  cursor: pointer;
+}
+
 .hidden {
   opacity: 0;
   z-index: -100;
