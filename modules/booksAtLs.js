@@ -1,10 +1,10 @@
 class BooksAtLocalStorage {
   static getBooksFromLs() {
     let lsBooksArr;
-    if (localStorage.getItem("books-list") === null) {
+    if (localStorage.getItem('books-list') === null) {
       lsBooksArr = [];
     } else {
-      lsBooksArr = JSON.parse(localStorage.getItem("books-list"));
+      lsBooksArr = JSON.parse(localStorage.getItem('books-list'));
     }
     return lsBooksArr;
   }
@@ -12,7 +12,7 @@ class BooksAtLocalStorage {
   static addBooksToLs(book) {
     const booksList = BooksAtLocalStorage.getBooksFromLs();
     booksList.push(book);
-    localStorage.setItem("books-list", JSON.stringify(booksList));
+    localStorage.setItem('books-list', JSON.stringify(booksList));
   }
 
   static removeBookFromLs(bookId) {
@@ -22,7 +22,7 @@ class BooksAtLocalStorage {
         booksList.splice(index, 1);
       }
     });
-    localStorage.setItem("books-list", JSON.stringify(booksList));
+    localStorage.setItem('books-list', JSON.stringify(booksList));
   }
 }
 
